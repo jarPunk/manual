@@ -1,0 +1,45 @@
+body {
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    font-family: Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ffffff; /* Borde blanco */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333333; /* Encabezado oscuro */
+}
+
+tr:nth-child(even) {
+    background-color: #282828; /* Fondo de fila par más oscuro */
+}
+
+a {
+    color: #ff9800; /* Enlace con color cálido */
+}
+
+a:hover {
+    color: #ffcc80; /* Color de enlace al pasar el ratón */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ff9800; /* Encabezados con color cálido */
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+li {
+    margin: 5px 0;
+}
+
