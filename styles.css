@@ -1,5 +1,5 @@
 body {
-    background-color: #121212; /* Fondo oscuro */
+    background-color: #1a1a1a; /* Fondo oscuro agradable */
     color: #ffffff; /* Texto blanco */
     font-family: Arial, sans-serif;
 }
@@ -43,3 +43,20 @@ li {
     margin: 5px 0;
 }
 
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #343a40; /* Fondo oscuro para el botón */
+    color: #ffffff; /* Texto blanco */
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #1d2124; /* Color más oscuro al pasar el ratón */
+}
