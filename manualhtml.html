@@ -131,7 +131,15 @@
             <td>&lt;head&gt;</td>
             <td> Contiene metainformación sobre el documento, como enlaces a CSS, definiciones de caracteres, y más.</td>
             <td>
-                &lt;head &gt;-_ _ _ &lt;/head&gt;<br>
+                &lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                &nbsp;&nbsp;&lt;title&gt;Ejemplo de Head&lt;/title&gt;<br>
+                &nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;<br>
+                &nbsp;&nbsp;&lt;style&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;body {font-family: Arial, sans-serif; }<br>
+                &nbsp;&nbsp;&lt;/style&gt;<br>
+                &nbsp;&nbsp;&lt;script src="script.js"&gt;&lt;/script&gt;<br>
                 
             </td>
             <td>
@@ -142,7 +150,12 @@
                 <td>&lt;body&gt;</td>
                 <td> Contiene el contenido visible de la página web, como texto, imágenes, enlaces, etc.</td>
                 <td>
-                    &lt;head &gt;-_ _ _ &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &nbsp;&nbsp;&lt;h1&gt;Título Principal&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&lt;p&gt;Este es un párrafo&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&lt;img src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen"&gt;<br>
+                    &nbsp;&nbsp;&lt;a href="https://www.ejemplo.com"&gt;Enlace de Ejemplo&lt;/a&gt;<br>
+                    &lt;/body&gt;
                     
                 </td>
                 <td>
@@ -153,7 +166,11 @@
                 <td>&lt;article&gt;</td>
                 <td> Define un artículo independiente y autocontenido dentro de un documento.</td>
                 <td>
-                    &lt;head &gt;-_ _ _ &lt;/head&gt;<br>
+                    &lt;article&gt;<br>
+                    &nbsp;&nbsp;&lt;h2&gt;Título del Artículo&lt;/h2&gt;<br>
+                    &nbsp;&nbsp;&lt;p&gt;Este es un artículo sobre un tema específico.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&lt;p&gt;El contenido del artículo va aquí.&lt;/p&gt;<br>
+                    &lt;/article&gt;
                     
                 </td>
                 <td>
@@ -164,7 +181,14 @@
                 <td>&lt;section&gt;</td>
                 <td> Define una sección de un documento. Es una parte temática de alto nivel de un documento.</td>
                 <td>
-                    &lt;head &gt;-_ _ _ &lt;/head&gt;<br>
+                    &lt;section&gt;<br>
+                    &nbsp;&nbsp;&lt;h2&gt;Sección Principal&lt;/h2&gt;<br>
+                    &nbsp;&nbsp;&lt;p&gt;Este es el contenido de la sección.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&lt;section&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Subsección&lt;/h3&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Contenido de la subsección.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&lt;/section&gt;<br>
+                    &lt;/section&gt;
                     
                 </td>
                 <td>
@@ -176,7 +200,11 @@
                 <td>Define una sección de navegación en la página.</td>
                 <td>
                     &lt;nav&gt;<br>
-                    &nbsp;&nbsp;<!-- Aquí colocas tus elementos de navegación --> <br>
+                    &nbsp;&nbsp;&lt;ul&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#servicios"&gt;Servicios&lt;/a&gt;&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&lt;/ul&gt;<br>
                     &lt;/nav&gt;
                 </td>
                 <td>
@@ -188,7 +216,9 @@
                 <td>Define contenido que es tangencial al contenido que lo rodea.</td>
                 <td>
                     &lt;aside&gt;<br>
-                    &nbsp;&nbsp;<!-- Contenido adicional --> <br>
+                    &nbsp;&nbsp;&lt;h2&gt;Publicidad&lt;/h2&gt;<br>
+                    &nbsp;&nbsp;&lt;p&gt;Anuncio 1&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&lt;p&gt;Anuncio 2&lt;/p&gt;<br>
                     &lt;/aside&gt;
                 </td>
                 <td>
@@ -212,7 +242,12 @@
                 <td>Define la cabecera de una sección o de la página completa.</td>
                 <td>
                     &lt;header&gt;<br>
-                    &nbsp;&nbsp;<!-- Coloca aquí el contenido de la cabecera --> <br>
+                    &nbsp;&nbsp;&lt;h1&gt;Título del Sitio&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&lt;nav&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#acerca"&gt;Acerca de Nosotros&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&lt;/nav&gt;<br>
                     &lt;/header&gt;
                 </td>
                 <td>
@@ -224,7 +259,11 @@
                 <td>Define el pie de una sección o de la página completa.</td>
                 <td>
                     &lt;footer&gt;<br>
-                    &nbsp;&nbsp;<!-- Coloca aquí el contenido del pie --> <br>
+                    &nbsp;&nbsp;© 2023 Mi Sitio Web<br>
+                    &nbsp;&nbsp;&lt;address&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;123 Calle Principal, Ciudad<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Teléfono: (123) 456-7890<br>
+                    &nbsp;&nbsp;&lt;/address&gt;<br>
                     &lt;/footer&gt;
                 </td>
                 <td>
@@ -236,7 +275,11 @@
                 <td>Proporciona información de contacto del autor de la página o del contenido.</td>
                 <td>
                     &lt;address&gt;<br>
-                    &nbsp;&nbsp;<!-- Coloca aquí la información de contacto --> <br>
+                    &nbsp;&nbsp;John Doe<br>
+                    &nbsp;&nbsp;123 Calle Principal<br>
+                    &nbsp;&nbsp;Ciudad, País<br>
+                    &nbsp;&nbsp;Teléfono: (123) 456-7890<br>
+                    &nbsp;&nbsp;Correo: john.doe@example.com<br>
                     &lt;/address&gt;
                 </td>
                 <td>
@@ -248,7 +291,8 @@
                 <td>Contiene el contenido principal o relevante de la página.</td>
                 <td>
                     &lt;main&gt;<br>
-                    &nbsp;&nbsp;<!-- Coloca aquí el contenido principal --> <br>
+                    &nbsp;&nbsp;&lt;h1&gt;Título Principal&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&lt;p&gt;Este es el contenido principal de la página.&lt;/p&gt;<br>
                     &lt;/main&gt;
                 </td>
                 <td>
@@ -260,7 +304,8 @@
                 <td>Envuelve algún contenido multimedia, como imágenes, ilustraciones, diagramas, etc.</td>
                 <td>
                     &lt;figure&gt;<br>
-                    &nbsp;&nbsp;<!-- Coloca aquí el contenido multimedia --> <br>
+                    &nbsp;&nbsp;&lt;img src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen"&gt;<br>
+                    &nbsp;&nbsp;&lt;figcaption&gt>Descripción de la imagen&lt;/figcaption&gt;<br>
                     &lt;/figure&gt;
                 </td>
                 <td>
@@ -272,7 +317,8 @@
                 <td>Proporciona una descripción o título para el contenido dentro de la etiqueta &lt;figure&gt;.</td>
                 <td>
                     &lt;figure&gt;<br>
-                    &nbsp;&nbsp;<!-- Coloca aquí la descripción o título --> <br>
+                    &nbsp;&nbsp;&lt;img src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen"&gt;<br>
+                    &nbsp;&nbsp;&lt;figcaption&gt;Descripción de la imagen&lt;/figcaption&gt;<br>
                     &lt;/figure&gt;
                 </td>
                 <td>
@@ -283,8 +329,8 @@
                 <td>&lt;div&gt;</td>
                 <td>Es un contenedor genérico que se utiliza para dividir el contenido en secciones o grupos.</td>
                 <td>
-                    &lt;div&gt;<br>
-                    &nbsp;&nbsp;<!-- Coloca aquí el contenido dentro del contenedor --> <br>
+                    &lt;div class="contenedor"&gt;<br>
+                    &nbsp;&nbsp;<!-- Contenido dentro del div --> <br>
                     &lt;/div&gt;
                 </td>
                 <td>
